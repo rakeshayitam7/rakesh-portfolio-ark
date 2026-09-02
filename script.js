@@ -1,0 +1,174 @@
+/* ================= MOBILE MENU ================= */
+
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+
+    menuBtn.textContent =
+        navMenu.classList.contains("active")
+            ? "×"
+            : "☰";
+});
+
+
+/* CLOSE MOBILE MENU AFTER CLICK */
+
+document.querySelectorAll("#navMenu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navMenu.classList.remove("active");
+
+        menuBtn.textContent = "☰";
+
+    });
+
+});
+
+
+/* ================= CERTIFICATE MODAL ================= */
+
+const certificateModal =
+    document.getElementById("certificateModal");
+
+const modalCertificate =
+    document.getElementById("modalCertificate");
+
+
+function openCertificate(imagePath) {
+
+    modalCertificate.src = imagePath;
+
+    certificateModal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeCertificate() {
+
+    certificateModal.classList.remove("active");
+
+    modalCertificate.src = "";
+
+    document.body.style.overflow = "";
+}
+
+
+/* CLOSE MODAL WHEN CLICKING OUTSIDE */
+
+certificateModal.addEventListener("click", (event) => {
+
+    if (event.target === certificateModal) {
+        closeCertificate();
+    }
+
+});
+
+
+/* ESCAPE KEY */
+
+document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape") {
+        closeCertificate();
+    }
+
+});
+
+
+/* ================= SCROLL REVEAL ================= */
+
+const revealElements =
+    document.querySelectorAll(
+        ".section-heading, .skill-card, .timeline-item, " +
+        ".project-card, .education-card, .certificate-card, " +
+        ".info-box, .soft-skills span"
+    );
+
+
+const observer =
+    new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform =
+                        "translateY(0)";
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.08
+        }
+    );
+
+
+revealElements.forEach(element => {
+
+    element.style.opacity = "0";
+
+    element.style.transform =
+        "translateY(25px)";
+
+    element.style.transition =
+        "opacity .7s ease, transform .7s ease";
+
+    observer.observe(element);
+
+});
+
+
+/* ================= CURRENT YEAR ================= */
+
+const year = new Date().getFullYear();
+
+const footerText =
+    document.querySelector(".footer-inner p");
+
+if (footerText) {
+
+    footerText.innerHTML =
+        `© ${year} Ayitam Rakesh Kumar • Designed & built with purpose`;
+
+}
+
+
+/* ================= IMAGE ERROR HANDLING ================= */
+
+document.querySelectorAll(".certificate-image img")
+    .forEach(img => {
+
+        img.addEventListener("error", () => {
+
+            img.style.display = "none";
+
+            const parent =
+                img.parentElement;
+
+            parent.style.display = "grid";
+            parent.style.placeItems = "center";
+
+            parent.innerHTML += `
+                <span style="
+                    color:#64748b;
+                    font-size:10px;
+                    letter-spacing:1px;
+                ">
+                    CERTIFICATE IMAGE
+                </span>
+            `;
+
+        });
+
+    });
