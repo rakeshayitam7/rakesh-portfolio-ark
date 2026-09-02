@@ -1,699 +1,856 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ayitam Rakesh Kumar — Embedded Systems, VLSI and Java Developer Portfolio">
 
-    <meta name="description"
-          content="Ayitam Rakesh Kumar - ECE Engineer | Embedded Systems | VLSI | Java Developer">
+  <meta name="theme-color" content="#050908">
 
-    <meta name="keywords"
-          content="Ayitam Rakesh Kumar, Embedded Systems, VLSI, Java Developer, ECE, NodeMCU">
+  <title>Ayitam Rakesh Kumar | Engineering Portfolio</title>
 
-    <meta name="author" content="Ayitam Rakesh Kumar">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <title>Ayitam Rakesh Kumar | Engineer Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<div class="noise"></div>
+<div class="cursor-glow"></div>
 
-<header class="navbar">
+<header class="nav">
 
-    <div class="nav-container">
+  <a href="#top" class="brand">
+    <span class="brand-mark">AR</span>
+    <span>AYITAM<span>RK</span></span>
+  </a>
 
-        <a href="#home" class="logo">
-            <span>AR</span>
-            <div>
-                <strong>RAKESH</strong>
-                <small>ENGINEER</small>
-            </div>
-        </a>
+  <button class="menu">
+    <span></span>
+    <span></span>
+  </button>
 
-        <nav id="navMenu">
+  <nav>
+    <a href="#about">01 ABOUT</a>
+    <a href="#experience">02 EXPERIENCE</a>
+    <a href="#projects">03 PROJECTS</a>
+    <a href="#credentials">04 CREDENTIALS</a>
+    <a href="#contact">05 CONTACT</a>
+  </nav>
 
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-        <div class="nav-social">
-
-            <a href="https://github.com/rakeshayitam7"
-               target="_blank"
-               aria-label="GitHub">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/rakesh-kumar-ayitam-751a07315"
-               target="_blank"
-               aria-label="LinkedIn">
-                LinkedIn
-            </a>
-
-        </div>
-
-        <button class="menu-btn" id="menuBtn">
-            ☰
-        </button>
-
-    </div>
+  <a class="nav-cta" href="mailto:rakeshayitam61@gmail.com">
+    LET'S TALK ↗
+  </a>
 
 </header>
 
 
-<!-- ================= HERO ================= -->
+<main id="top">
 
-<section class="hero" id="home">
+<!-- HERO -->
 
-    <div class="hero-grid"></div>
+<section class="hero section">
 
-    <div class="hero-content">
+  <div class="hero-grid"></div>
 
-        <div class="status">
-            <span></span>
-            ECE ENGINEER • TECHNOLOGY ENTHUSIAST
+  <div class="hero-copy reveal">
+
+    <p class="eyebrow">
+      <span class="pulse"></span>
+      ECE ENGINEER • BUILDER • TEAM LEAD
+    </p>
+
+    <h1>
+      Engineering ideas
+      <br>
+      <em>into reality.</em>
+    </h1>
+
+    <p class="hero-text">
+      I'm <strong>Ayitam Rakesh Kumar</strong> —
+      an ECE student focused on Embedded Systems,
+      VLSI, Java and AI.
+      I enjoy turning hardware, code and ambitious
+      ideas into working systems.
+    </p>
+
+    <div class="actions">
+
+      <a href="#projects" class="button primary">
+        Explore my work
+        <span>↗</span>
+      </a>
+
+      <a href="assets/resume.pdf"
+         target="_blank"
+         class="button ghost">
+        View resume
+        <span>↓</span>
+      </a>
+
+    </div>
+
+    <div class="social-row">
+
+      <a href="https://github.com/rakeshayitam7"
+         target="_blank">
+        GitHub ↗
+      </a>
+
+      <a href="https://www.linkedin.com/in/rakesh-kumar-ayitam-751a07315"
+         target="_blank">
+        LinkedIn ↗
+      </a>
+
+      <a href="https://leetcode.com/u/rakesh_kumar99/"
+         target="_blank">
+        LeetCode ↗
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="hero-visual reveal">
+
+    <div class="orbit orbit-a"></div>
+    <div class="orbit orbit-b"></div>
+
+    <div class="chip">
+
+      <div class="chip-top">
+        <span>ECE / 01</span>
+        <span>NODEMCU</span>
+      </div>
+
+      <div class="chip-core">
+
+        <span class="pin p1"></span>
+        <span class="pin p2"></span>
+        <span class="pin p3"></span>
+        <span class="pin p4"></span>
+
+        <div class="chip-logo">
+          RK
         </div>
 
-        <h1>
-            Ayitam
-            <span>Rakesh Kumar</span>
-        </h1>
+      </div>
 
-        <p class="hero-title">
-            Embedded Systems
-            <b>•</b>
-            VLSI
-            <b>•</b>
-            Java Developer
-        </p>
-
-        <p class="hero-description">
-            Motivated ECE engineering student passionate about
-            building practical technology across embedded systems,
-            VLSI, software and AI.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="btn primary">
-                Explore My Work
-                <span>↗</span>
-            </a>
-
-            <a href="assets/resume.pdf"
-               target="_blank"
-               class="btn secondary">
-                View Resume
-                <span>↓</span>
-            </a>
-
-        </div>
-
-        <div class="social-buttons">
-
-            <a href="https://github.com/rakeshayitam7"
-               target="_blank"
-               class="social-card">
-
-                <div class="social-icon">GH</div>
-
-                <div>
-                    <small>CODE</small>
-                    <strong>GitHub</strong>
-                </div>
-
-                <span>↗</span>
-
-            </a>
-
-
-            <a href="https://www.linkedin.com/in/rakesh-kumar-ayitam-751a07315"
-               target="_blank"
-               class="social-card">
-
-                <div class="social-icon linkedin">in</div>
-
-                <div>
-                    <small>NETWORK</small>
-                    <strong>LinkedIn</strong>
-                </div>
-
-                <span>↗</span>
-
-            </a>
-
-        </div>
+      <div class="chip-bottom">
+        <span>BUILD / TEST / SHIP</span>
+        <span>∞</span>
+      </div>
 
     </div>
 
 
-    <!-- ENGINEERING VISUAL -->
-
-    <div class="hero-visual">
-
-        <div class="orb"></div>
-
-        <div class="circuit circuit-one"></div>
-        <div class="circuit circuit-two"></div>
-        <div class="circuit circuit-three"></div>
-
-        <div class="tech-card">
-
-            <div class="tech-top">
-                <span>ENGINEERING</span>
-                <span class="live-dot"></span>
-            </div>
-
-            <div class="chip">
-
-                <div class="chip-name">
-                    ECE
-                </div>
-
-                <div class="chip-lines">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-
-            </div>
-
-            <div class="tech-bottom">
-
-                <div>
-                    <small>FOCUS</small>
-                    <strong>EMBEDDED</strong>
-                </div>
-
-                <div>
-                    <small>DOMAIN</small>
-                    <strong>VLSI</strong>
-                </div>
-
-            </div>
-
-        </div>
-
+    <div class="float-card fc-a">
+      <small>FOCUS</small>
+      <b>
+        Embedded<br>
+        Systems
+      </b>
     </div>
+
+    <div class="float-card fc-b">
+      <small>VLSI</small>
+      <b>
+        Design →<br>
+        Implementation
+      </b>
+    </div>
+
+    <div class="signal">
+      <i></i><i></i><i></i>
+      <i></i><i></i><i></i>
+      <i></i><i></i><i></i>
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- ================= STATS ================= -->
+<!-- TICKER -->
 
-<section class="stats">
+<section class="ticker">
 
-    <div class="stat">
-        <strong>ECE</strong>
-        <span>Engineering</span>
-    </div>
+  <div>
 
-    <div class="stat">
-        <strong>6+</strong>
-        <span>Months BSNL Training</span>
-    </div>
+    <span>EMBEDDED SYSTEMS</span>
+    <b>✦</b>
 
-    <div class="stat">
-        <strong>VLSI</strong>
-        <span>Industry Internship</span>
-    </div>
+    <span>VLSI</span>
+    <b>✦</b>
 
-    <div class="stat">
-        <strong>360°</strong>
-        <span>Robotic Project</span>
-    </div>
+    <span>JAVA</span>
+    <b>✦</b>
 
-</section>
+    <span>JAVASCRIPT</span>
+    <b>✦</b>
 
+    <span>AI</span>
+    <b>✦</b>
 
-<!-- ================= ABOUT ================= -->
+    <span>IoT</span>
+    <b>✦</b>
 
-<section class="section" id="about">
+    <span>EMBEDDED SYSTEMS</span>
 
-    <div class="section-heading">
-
-        <span class="eyebrow">01 / ABOUT</span>
-
-        <h2>
-            Engineering mindset.
-            <span>Practical execution.</span>
-        </h2>
-
-    </div>
-
-
-    <div class="about-grid">
-
-        <div class="about-main">
-
-            <p class="large-text">
-                I am an ECE engineering student interested in
-                turning technical concepts into practical,
-                useful solutions.
-            </p>
-
-            <p>
-                My interests span Embedded Systems, VLSI,
-                Java and AI. I enjoy working with hardware,
-                software and communication technologies while
-                continuously improving my technical skills.
-            </p>
-
-            <p>
-                My experience includes industrial training at
-                BSNL and a VLSI internship, along with academic
-                project leadership.
-            </p>
-
-        </div>
-
-
-        <div class="about-info">
-
-            <div class="info-box">
-                <span>EDUCATION</span>
-                <strong>B.Tech — ECE</strong>
-                <small>Swarnandhra College of Engineering and Technology</small>
-            </div>
-
-            <div class="info-box">
-                <span>CORE FOCUS</span>
-                <strong>Embedded + VLSI</strong>
-                <small>Hardware • Software • Digital Electronics</small>
-            </div>
-
-            <div class="info-box">
-                <span>LOCATION</span>
-                <strong>Andhra Pradesh</strong>
-                <small>India</small>
-            </div>
-
-        </div>
-
-    </div>
+  </div>
 
 </section>
 
 
-<!-- ================= SKILLS ================= -->
+<!-- ABOUT -->
 
-<section class="section dark-section" id="skills">
+<section id="about" class="section about">
 
-    <div class="section-heading">
+  <div class="section-label reveal">
+    <span>01</span>
+    ABOUT
+  </div>
 
-        <span class="eyebrow">02 / SKILLS</span>
+  <div class="about-content">
 
-        <h2>
-            Technical
-            <span>toolkit.</span>
-        </h2>
+    <div class="reveal">
 
-    </div>
-
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-
-            <div class="skill-number">01</div>
-
-            <h3>Programming</h3>
-
-            <div class="tags">
-                <span>C</span>
-                <span>Java</span>
-                <span>Python</span>
-                <span>JavaScript</span>
-            </div>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <div class="skill-number">02</div>
-
-            <h3>Embedded & Core</h3>
-
-            <div class="tags">
-                <span>Embedded Systems</span>
-                <span>VLSI</span>
-                <span>Digital Electronics</span>
-                <span>NodeMCU</span>
-            </div>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <div class="skill-number">03</div>
-
-            <h3>Communication</h3>
-
-            <div class="tags">
-                <span>GSM</span>
-                <span>Networking</span>
-                <span>Optical Fiber</span>
-                <span>Transmission</span>
-            </div>
-
-        </div>
-
-
-        <div class="skill-card">
-
-            <div class="skill-number">04</div>
-
-            <h3>Tools</h3>
-
-            <div class="tags">
-                <span>VS Code</span>
-                <span>GitHub</span>
-                <span>Git</span>
-            </div>
-
-        </div>
+      <h2>
+        Curious by nature.
+        <br>
+        <em>Technical by choice.</em>
+      </h2>
 
     </div>
 
-</section>
-
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section class="section" id="experience">
-
-    <div class="section-heading">
-
-        <span class="eyebrow">03 / EXPERIENCE</span>
-
-        <h2>
-            Industry
-            <span>exposure.</span>
-        </h2>
-
-    </div>
-
-
-    <div class="timeline">
-
-
-        <!-- BSNL -->
-
-        <article class="timeline-item">
-
-            <div class="timeline-marker">
-                01
-            </div>
-
-            <div class="timeline-content">
-
-                <div class="experience-head">
-
-                    <div>
-                        <span class="experience-type">
-                            INDUSTRIAL TRAINING
-                        </span>
-
-                        <h3>BSNL</h3>
-                    </div>
-
-                    <span class="experience-duration">
-                        6 MONTHS
-                    </span>
-
-                </div>
-
-                <p>
-                    Industrial training covering telecom
-                    infrastructure and maintenance.
-                </p>
-
-                <div class="experience-tags">
-                    <span>GSM</span>
-                    <span>BTS Maintenance</span>
-                    <span>Optical Fiber</span>
-                    <span>Transmission</span>
-                    <span>Networking</span>
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- BR Concepts -->
-
-        <article class="timeline-item">
-
-            <div class="timeline-marker">
-                02
-            </div>
-
-            <div class="timeline-content">
-
-                <div class="experience-head">
-
-                    <div>
-                        <span class="experience-type">
-                            VLSI INTERNSHIP
-                        </span>
-
-                        <h3>BR Concepts Pvt. Ltd.</h3>
-                    </div>
-
-                    <span class="experience-duration">
-                        APSCHE
-                    </span>
-
-                </div>
-
-                <p>
-                    Exposure to VLSI fundamentals, IC design,
-                    semiconductor concepts, layout and the
-                    VLSI design flow.
-                </p>
-
-                <div class="experience-tags">
-                    <span>VLSI</span>
-                    <span>IC Design</span>
-                    <span>VLSI Layout</span>
-                    <span>Semiconductor</span>
-                    <span>Design Flow</span>
-                </div>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="section dark-section" id="projects">
-
-    <div class="section-heading">
-
-        <span class="eyebrow">04 / PROJECTS</span>
-
-        <h2>
-            Things I've
-            <span>built.</span>
-        </h2>
-
-    </div>
-
-
-    <div class="projects-grid">
-
-
-        <!-- FEATURED PROJECT -->
-
-        <article class="project-card featured-project">
-
-            <div class="project-number">
-                FEATURED PROJECT / 01
-            </div>
-
-            <div class="project-content">
-
-                <div class="project-icon">
-                    ⚙
-                </div>
-
-                <h3>
-                    Wi-Fi Controlled
-                    Robotic Military Tank
-                </h3>
-
-                <p>
-                    A Wi-Fi controlled robotic system developed
-                    using NodeMCU with 360° rotation and
-                    hill-climbing capability.
-                </p>
-
-                <div class="project-tags">
-                    <span>NodeMCU</span>
-                    <span>IoT</span>
-                    <span>Embedded</span>
-                    <span>Wi-Fi</span>
-                </div>
-
-                <div class="project-footer">
-                    <span>TEAM LEADER</span>
-                    <span>↗</span>
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- GITHUB PROJECT -->
-
-        <article class="project-card">
-
-            <div class="project-number">
-                GITHUB / 02
-            </div>
-
-            <div class="project-content">
-
-                <div class="project-icon green">
-                    GH
-                </div>
-
-                <h3>
-                    Nutrition Analysis Website
-                </h3>
-
-                <p>
-                    A web-based nutrition analysis project
-                    available through my GitHub profile.
-                </p>
-
-                <div class="project-tags">
-                    <span>JavaScript</span>
-                    <span>Web</span>
-                    <span>Nutrition</span>
-                </div>
-
-                <a class="project-link"
-                   href="https://github.com/rakeshayitam7/nutrition-analysis-website1"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- GAME PROJECT -->
-
-        <article class="project-card">
-
-            <div class="project-number">
-                GITHUB / 03
-            </div>
-
-            <div class="project-content">
-
-                <div class="project-icon red">
-                    GAME
-                </div>
-
-                <h3>
-                    Game Extreme
-                </h3>
-
-                <p>
-                    A browser gaming platform project focused
-                    on interactive web-based games and responsive
-                    user experience.
-                </p>
-
-                <div class="project-tags">
-                    <span>JavaScript</span>
-                    <span>Games</span>
-                    <span>Frontend</span>
-                </div>
-
-                <a class="project-link"
-                   href="https://github.com/rakeshayitam7/Game-Extreme"
-                   target="_blank">
-                    View on GitHub →
-                </a>
-
-            </div>
-
-        </article>
-
-    </div>
-
-
-    <div class="github-banner">
+    <div class="about-text reveal">
+
+      <p>
+        Motivated ECE student with hands-on exposure
+        to telecom infrastructure, VLSI concepts and
+        IoT-based robotics.
+      </p>
+
+      <p>
+        I like understanding systems from the circuit
+        level up to the software layer.
+      </p>
+
+      <p>
+        My strongest academic project is a
+        Wi-Fi controlled robotic military tank using
+        NodeMCU, where I led the team, developed code
+        and integrated the circuits.
+      </p>
+
+      <div class="stats">
 
         <div>
-            <span class="eyebrow">OPEN SOURCE / CODE</span>
-            <h3>Explore more of my work on GitHub.</h3>
+          <strong>7.09</strong>
+          <span>B.Tech CGPA</span>
         </div>
 
-        <a href="https://github.com/rakeshayitam7"
-           target="_blank"
-           class="btn primary">
-            Visit GitHub ↗
-        </a>
+        <div>
+          <strong>81%</strong>
+          <span>Diploma</span>
+        </div>
+
+        <div>
+          <strong>96%</strong>
+          <span>SSC</span>
+        </div>
+
+        <div>
+          <strong>6 mo</strong>
+          <span>BSNL Training</span>
+        </div>
+
+      </div>
 
     </div>
+
+  </div>
 
 </section>
 
 
-<!-- ================= EDUCATION ================= -->
+<!-- EXPERIENCE -->
 
-<section class="section" id="education">
+<section id="experience" class="section dark-section">
 
-    <div class="section-heading">
+  <div class="section-label reveal">
+    <span>02</span>
+    EXPERIENCE
+  </div>
 
-        <span class="eyebrow">05 / EDUCATION</span>
+  <div class="experience-list">
 
-        <h2>
-            Academic
-            <span>foundation.</span>
-        </h2>
+    <article class="experience reveal">
+
+      <div class="exp-no">
+        01
+      </div>
+
+      <div class="exp-main">
+
+        <div class="exp-head">
+
+          <h3>BSNL</h3>
+
+          <span>
+            6 MONTHS
+          </span>
+
+        </div>
+
+        <p>
+          In-plant industrial training covering GSM,
+          BTS maintenance, optical fiber communication,
+          transmission systems and networking.
+        </p>
+
+        <div class="tags">
+
+          <span>GSM</span>
+          <span>OFC</span>
+          <span>Networking</span>
+          <span>Telecom</span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="experience reveal">
+
+      <div class="exp-no">
+        02
+      </div>
+
+      <div class="exp-main">
+
+        <div class="exp-head">
+
+          <h3>BR Concepts</h3>
+
+          <span>
+            APSCHE VLSI
+          </span>
+
+        </div>
+
+        <p>
+          VLSI internship exposure covering VLSI basics,
+          IC design, VLSI layout, semiconductor fundamentals
+          and design flow.
+        </p>
+
+        <div class="tags">
+
+          <span>VLSI</span>
+          <span>IC DESIGN</span>
+          <span>LAYOUT</span>
+          <span>SEMICONDUCTORS</span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section projects">
+
+  <div class="section-label reveal">
+    <span>03</span>
+    SELECTED WORK
+  </div>
+
+
+  <div class="projects-head reveal">
+
+    <h2>
+      Things I've
+      <br>
+      <em>built & explored.</em>
+    </h2>
+
+    <p>
+      Projects that connect electronics,
+      software, problem solving and product thinking.
+    </p>
+
+  </div>
+
+
+  <!-- FEATURE PROJECT -->
+
+  <div class="project-feature reveal">
+
+    <div class="project-number">
+      01 / FEATURED
+    </div>
+
+    <div class="project-copy">
+
+      <p class="project-type">
+        IoT • ROBOTICS • NODEMCU
+      </p>
+
+      <h3>
+        Wi-Fi Controlled
+        <br>
+        <em>Robotic Military Tank</em>
+      </h3>
+
+      <p>
+        Wi-Fi controlled robotic platform with
+        360° rotation and hill-climbing capability.
+        Led the team, developed the code, integrated
+        circuits and coordinated implementation.
+      </p>
+
+      <div class="tags">
+
+        <span>NodeMCU</span>
+        <span>Wi-Fi</span>
+        <span>Embedded C</span>
+        <span>Hardware</span>
+
+      </div>
 
     </div>
 
 
-    <div class="education-grid">
+    <div class="robot-stage">
 
-        <div class="education-card">
+      <div class="radar"></div>
 
-            <span class="education-year">
-                CURRENT
-            </span>
+      <div class="tank">
 
-            <h3>B.Tech
+        <div class="tank-body"></div>
+
+        <div class="tank-top"></div>
+
+        <div class="barrel"></div>
+
+        <div class="wheel w1"></div>
+        <div class="wheel w2"></div>
+        <div class="wheel w3"></div>
+        <div class="wheel w4"></div>
+
+      </div>
+
+      <span class="target t1">
+        TARGET 01
+      </span>
+
+      <span class="target t2">
+        SIGNAL OK
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div class="project-grid">
+
+    <article class="project-card reveal">
+
+      <div class="project-card-top">
+
+        <span>02</span>
+
+        <span>
+          WEB / JAVASCRIPT
+        </span>
+
+      </div>
+
+      <div class="project-icon">
+        ⌁
+      </div>
+
+      <h3>
+        Nutrition Analysis
+        <br>
+        Website
+      </h3>
+
+      <p>
+        A frontend project for nutrition analysis
+        and food-focused information.
+      </p>
+
+      <a href="https://github.com/rakeshayitam7/nutrition-analysis-website1"
+         target="_blank">
+        View repository ↗
+      </a>
+
+    </article>
+
+
+    <article class="project-card accent reveal">
+
+      <div class="project-card-top">
+
+        <span>03</span>
+
+        <span>
+          WEB / GAMING
+        </span>
+
+      </div>
+
+      <div class="project-icon">
+        ◈
+      </div>
+
+      <h3>
+        Game Extreme
+      </h3>
+
+      <p>
+        A modern responsive browser gaming
+        platform concept featuring 200+ games.
+      </p>
+
+      <a href="https://github.com/rakeshayitam7/Game-Extreme"
+         target="_blank">
+        View repository ↗
+      </a>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- CREDENTIALS -->
+
+<section id="credentials"
+         class="section credentials dark-section">
+
+  <div class="section-label reveal">
+    <span>04</span>
+    CREDENTIALS
+  </div>
+
+  <div class="credentials-head reveal">
+
+    <h2>
+      Proof of
+      <br>
+      <em>progress.</em>
+    </h2>
+
+    <p>
+      Training, internships, hackathons and
+      participation that document the journey.
+    </p>
+
+  </div>
+
+
+  <div class="credential-grid">
+
+    <article class="credential reveal">
+
+      <span>BSNL / 2023</span>
+
+      <h3>
+        Industrial Training
+      </h3>
+
+      <p>
+        MDF • Power Plant • OFC • BB • FTTH
+        • GSM • Switching Technologies
+      </p>
+
+      <button data-cert="bsnl.jpg">
+        View certificate ↗
+      </button>
+
+    </article>
+
+
+    <article class="credential reveal">
+
+      <span>BR CONCEPTS</span>
+
+      <h3>
+        APSCHE VLSI Internship
+      </h3>
+
+      <p>
+        VLSI basics • IC Design • Layout
+        • Semiconductor Fundamentals
+      </p>
+
+      <button data-cert="vlsi.jpg">
+        View credential ↗
+      </button>
+
+    </article>
+
+
+    <article class="credential reveal">
+
+      <span>HACKATHON / 2026</span>
+
+      <h3>
+        VISION-X 2K26
+      </h3>
+
+      <p>
+        36-hour National Level Hackathon
+        • Team Agni Nova
+      </p>
+
+      <button data-cert="vision-x.jpg">
+        View certificate ↗
+      </button>
+
+    </article>
+
+
+    <article class="credential reveal">
+
+      <span>AI / 2026</span>
+
+      <h3>
+        TenzorX National AI Hackathon
+      </h3>
+
+      <p>
+        Participation at St. Marys College
+        of Engineering and Technology, Hyderabad.
+      </p>
+
+      <button data-cert="tenzorx.jpg">
+        View certificate ↗
+      </button>
+
+    </article>
+
+
+    <article class="credential reveal">
+
+      <span>QUIZ / 2026</span>
+
+      <h3>
+        QuizOff 2026
+      </h3>
+
+      <p>
+        India's Biggest AI Quiz
+        • CampusCrew / Unstop
+      </p>
+
+      <button data-cert="quizoff.jpg">
+        View certificate ↗
+      </button>
+
+    </article>
+
+
+    <article class="credential reveal">
+
+      <span>CAMPUS / 2026</span>
+
+      <h3>
+        Campus Ambassador
+      </h3>
+
+      <p>
+        GlowLogics Campus Ambassador Program
+        • Jul–Aug 2026
+      </p>
+
+      <button data-cert="campus-ambassador.jpg">
+        View certificate ↗
+      </button>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- TOOLKIT -->
+
+<section class="section stack">
+
+  <div class="section-label reveal">
+    <span>05</span>
+    TOOLKIT
+  </div>
+
+  <div class="stack-grid reveal">
+
+    <div>
+      <small>PROGRAMMING</small>
+      <h3>
+        C · Java · Python · JavaScript
+      </h3>
+    </div>
+
+    <div>
+      <small>CORE</small>
+      <h3>
+        Embedded Systems · VLSI · Digital Electronics
+      </h3>
+    </div>
+
+    <div>
+      <small>COMMUNICATION</small>
+      <h3>
+        GSM · Networking · Optical Fiber
+      </h3>
+    </div>
+
+    <div>
+      <small>TOOLS</small>
+      <h3>
+        VS Code · GitHub · NodeMCU
+      </h3>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section contact">
+
+  <div class="contact-glow"></div>
+
+  <div class="section-label reveal">
+    <span>06</span>
+    CONTACT
+  </div>
+
+  <div class="contact-inner reveal">
+
+    <p class="eyebrow">
+      OPEN TO OPPORTUNITIES
+    </p>
+
+    <h2>
+      Let's build
+      <br>
+      <em>something real.</em>
+    </h2>
+
+    <a class="mail"
+       href="mailto:rakeshayitam61@gmail.com">
+
+      rakeshayitam61@gmail.com
+
+      <span>↗</span>
+
+    </a>
+
+
+    <div class="contact-meta">
+
+      <span>
+        Narsapuram, Andhra Pradesh
+      </span>
+
+      <span>
+        +91 9963755421
+      </span>
+
+    </div>
+
+
+    <div class="social-row big">
+
+      <a href="https://github.com/rakeshayitam7"
+         target="_blank">
+        GitHub ↗
+      </a>
+
+      <a href="https://www.linkedin.com/in/rakesh-kumar-ayitam-751a07315"
+         target="_blank">
+        LinkedIn ↗
+      </a>
+
+      <a href="https://leetcode.com/u/rakesh_kumar99/"
+         target="_blank">
+        LeetCode ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <span>
+    © <span id="year"></span>
+    AYITAM RAKESH KUMAR
+  </span>
+
+  <span>
+    DESIGNED / CODED WITH INTENT
+  </span>
+
+</footer>
+
+
+<!-- CERTIFICATE MODAL -->
+
+<div class="modal" aria-hidden="true">
+
+  <div class="modal-backdrop"></div>
+
+  <div class="modal-box">
+
+    <button class="modal-close">
+      ×
+    </button>
+
+    <img src="" alt="Certificate">
+
+    <p>
+      Certificate preview
+    </p>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
