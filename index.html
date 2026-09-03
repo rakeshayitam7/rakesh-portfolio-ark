@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -26,24 +26,39 @@
 <div class="noise"></div>
 <div class="cursor-glow"></div>
 
+<div class="intro-screen" aria-hidden="true">
+
+  <img class="intro-image"
+       src="background/hover motion.jpg"
+       alt="">
+
+  <div class="intro-content">
+    <p class="intro-kicker">ECE / SOFTWARE / BUILDER</p>
+    <h2>RAKESH</h2>
+    <span class="intro-line"></span>
+    <p class="intro-status">INITIALIZING PORTFOLIO <span>_</span></p>
+  </div>
+
+</div>
+
 <header class="nav">
 
   <a href="#top" class="brand">
-    <span class="brand-mark">AR</span>
-    <span>AYITAM<span>RK</span></span>
+    <span>AYITAM RAKESH KUMAR</span>
   </a>
 
-  <button class="menu">
+  <button class="menu" aria-label="Open navigation">
     <span></span>
     <span></span>
   </button>
 
   <nav>
     <a href="#about">01 ABOUT</a>
-    <a href="#experience">02 EXPERIENCE</a>
-    <a href="#projects">03 PROJECTS</a>
-    <a href="#credentials">04 CREDENTIALS</a>
-    <a href="#contact">05 CONTACT</a>
+    <a href="#education">02 EDUCATION</a>
+    <a href="#experience">03 EXPERIENCE</a>
+    <a href="#projects">04 PROJECTS</a>
+    <a href="#credentials">05 CREDENTIALS</a>
+    <a href="#contact">07 CONTACT</a>
   </nav>
 
   <a class="nav-cta" href="mailto:rakeshayitam61@gmail.com">
@@ -65,21 +80,28 @@
 
     <p class="eyebrow">
       <span class="pulse"></span>
-      ECE ENGINEER • BUILDER • TEAM LEAD
+      Embedded Systems | VLSI | Java Developer
     </p>
 
     <h1>
-      Engineering ideas
+      Ayitam Rakesh
       <br>
-      <em>into reality.</em>
+      <em>Kumar.</em>
     </h1>
 
     <p class="hero-text">
-      I'm <strong>Ayitam Rakesh Kumar</strong> —
-      an ECE student focused on Embedded Systems,
-      VLSI, Java and AI.
-      I enjoy turning hardware, code and ambitious
-      ideas into working systems.
+      Motivated Electronics and Communication Engineering student with a
+      strong interest in Embedded Systems, VLSI, Java, and AI. Gained practical
+      exposure through industrial training at BSNL and a VLSI internship at BR
+      Concepts. Experienced in developing IoT-based embedded projects using
+      NodeMCU, with hands-on involvement in programming, circuit integration,
+      and team leadership.
+    </p>
+
+    <p class="hero-contact">
+      <strong>Phone:</strong> +91 9963755421
+      <strong>Email:</strong> rakeshayitam61@gmail.com
+      <strong>Location:</strong> Narsapuram, Andhra Pradesh - 534275
     </p>
 
     <div class="actions">
@@ -89,8 +111,7 @@
         <span>↗</span>
       </a>
 
-      <a href="assets/resume.pdf"
-         target="_blank"
+      <a href="mailto:rakeshayitam61@gmail.com?subject=Resume%20request"
          class="button ghost">
         View resume
         <span>↓</span>
@@ -155,18 +176,12 @@
 
     <div class="float-card fc-a">
       <small>FOCUS</small>
-      <b>
-        Embedded<br>
-        Systems
-      </b>
+      <b>Embedded<br>Systems</b>
     </div>
 
     <div class="float-card fc-b">
       <small>VLSI</small>
-      <b>
-        Design →<br>
-        Implementation
-      </b>
+      <b>Design →<br>Implementation</b>
     </div>
 
     <div class="signal">
@@ -215,6 +230,10 @@
 
 <section id="about" class="section about">
 
+  <div class="about-photo">
+    <img src="background/images/second main bacground.jpg" alt="Ayitam Rakesh Kumar standing portrait">
+  </div>
+
   <div class="section-label reveal">
     <span>01</span>
     ABOUT
@@ -225,9 +244,9 @@
     <div class="reveal">
 
       <h2>
-        Curious by nature.
+        Professional
         <br>
-        <em>Technical by choice.</em>
+        <em>Summary.</em>
       </h2>
 
     </div>
@@ -235,21 +254,20 @@
     <div class="about-text reveal">
 
       <p>
-        Motivated ECE student with hands-on exposure
-        to telecom infrastructure, VLSI concepts and
-        IoT-based robotics.
+        Motivated ECE student with strong interest in
+        Embedded Systems, VLSI, Java and AI.
       </p>
 
       <p>
-        I like understanding systems from the circuit
-        level up to the software layer.
+        Internship experience in BSNL and BR Concepts,
+        with leadership experience delivering an IoT-based
+        robotic military tank project.
       </p>
 
       <p>
-        My strongest academic project is a
-        Wi-Fi controlled robotic military tank using
-        NodeMCU, where I led the team, developed code
-        and integrated the circuits.
+        I enjoy understanding systems from the circuit
+        level up to the software layer, then turning ideas
+        into working hardware.
       </p>
 
       <div class="stats">
@@ -270,7 +288,7 @@
         </div>
 
         <div>
-          <strong>6 mo</strong>
+          <strong>6 Months</strong>
           <span>BSNL Training</span>
         </div>
 
@@ -282,13 +300,45 @@
 
 </section>
 
+<section id="education" class="section education">
+
+  <div class="section-label reveal">
+    <span>02</span>
+    EDUCATION
+  </div>
+
+  <div class="education-grid">
+    <article class="education-item reveal">
+      <span>Currently Pursuing</span>
+      <h3>B.Tech - Electronics and Communication Engineering</h3>
+      <p>Swarnandhra College of Engineering and Technology</p>
+      <strong>CGPA: 7.09</strong>
+    </article>
+
+    <article class="education-item reveal">
+      <span>DIPLOMA</span>
+      <h3>Diploma - Electronics and Communication Engineering</h3>
+      <p>Swarnandhra College of Engineering and Technology</p>
+      <strong>Percentage: 81%</strong>
+    </article>
+
+    <article class="education-item reveal">
+      <span>SSC</span>
+      <h3>Secondary School Certificate</h3>
+      <p>Sri Gowthami High School</p>
+      <strong>Percentage: 96%</strong>
+    </article>
+  </div>
+
+</section>
+
 
 <!-- EXPERIENCE -->
 
 <section id="experience" class="section dark-section">
 
   <div class="section-label reveal">
-    <span>02</span>
+    <span>03</span>
     EXPERIENCE
   </div>
 
@@ -312,11 +362,12 @@
 
         </div>
 
-        <p>
-          In-plant industrial training covering GSM,
-          BTS maintenance, optical fiber communication,
-          transmission systems and networking.
-        </p>
+        <ul class="detail-list">
+          <li>Gained practical exposure to GSM and telecom infrastructure.</li>
+          <li>Learned about BTS maintenance and basic troubleshooting.</li>
+          <li>Studied Optical Fiber Communication and transmission systems.</li>
+          <li>Gained exposure to networking concepts and telecom operations.</li>
+        </ul>
 
         <div class="tags">
 
@@ -350,11 +401,12 @@
 
         </div>
 
-        <p>
-          VLSI internship exposure covering VLSI basics,
-          IC design, VLSI layout, semiconductor fundamentals
-          and design flow.
-        </p>
+        <ul class="detail-list">
+          <li>Studied VLSI fundamentals and semiconductor concepts.</li>
+          <li>Gained exposure to IC design and VLSI layout concepts.</li>
+          <li>Learned the fundamentals of the VLSI design flow.</li>
+          <li>Developed an understanding of semiconductor-based design processes.</li>
+        </ul>
 
         <div class="tags">
 
@@ -379,7 +431,7 @@
 <section id="projects" class="section projects">
 
   <div class="section-label reveal">
-    <span>03</span>
+    <span>04</span>
     SELECTED WORK
   </div>
 
@@ -421,10 +473,10 @@
       </h3>
 
       <p>
-        Wi-Fi controlled robotic platform with
-        360° rotation and hill-climbing capability.
-        Led the team, developed the code, integrated
-        circuits and coordinated implementation.
+        Designed and developed a Wi-Fi controlled robotic military tank using
+        NodeMCU. Implemented wireless control, 360° rotation and hill-climbing
+        capability. Worked on programming, circuit integration and system
+        implementation while leading the project team.
       </p>
 
       <div class="tags">
@@ -441,30 +493,9 @@
 
     <div class="robot-stage">
 
-      <div class="radar"></div>
-
-      <div class="tank">
-
-        <div class="tank-body"></div>
-
-        <div class="tank-top"></div>
-
-        <div class="barrel"></div>
-
-        <div class="wheel w1"></div>
-        <div class="wheel w2"></div>
-        <div class="wheel w3"></div>
-        <div class="wheel w4"></div>
-
-      </div>
-
-      <span class="target t1">
-        TARGET 01
-      </span>
-
-      <span class="target t2">
-        SIGNAL OK
-      </span>
+      <img class="project-image"
+           src="project/images/military tank.jpg"
+           alt="Wi-Fi controlled robotic military tank project">
 
     </div>
 
@@ -474,6 +505,10 @@
   <div class="project-grid">
 
     <article class="project-card reveal">
+
+      <img class="project-card-image"
+           src="project/images/nutrition analyzer website.jpg"
+           alt="Nutrition Analysis website project">
 
       <div class="project-card-top">
 
@@ -509,6 +544,10 @@
 
 
     <article class="project-card accent reveal">
+
+      <img class="project-card-image"
+           src="project/images/game extreme.jpg"
+           alt="Game Extreme browser gaming platform project">
 
       <div class="project-card-top">
 
@@ -551,7 +590,7 @@
          class="section credentials dark-section">
 
   <div class="section-label reveal">
-    <span>04</span>
+    <span>05</span>
     CREDENTIALS
   </div>
 
@@ -586,7 +625,7 @@
         • GSM • Switching Technologies
       </p>
 
-      <button data-cert="bsnl.jpg">
+      <button data-cert="bsnl.jpg.jpeg">
         View certificate ↗
       </button>
 
@@ -615,18 +654,18 @@
 
     <article class="credential reveal">
 
-      <span>HACKATHON / 2026</span>
+      <span>WORKSHOP / 2025</span>
 
       <h3>
-        VISION-X 2K26
+        PCB Designing & Manufacturing
       </h3>
 
       <p>
-        36-hour National Level Hackathon
-        • Team Agni Nova
+        Three-day workshop by Microlink Information Technologies
+        and the Department of ECE, Swarnandhra College.
       </p>
 
-      <button data-cert="vision-x.jpg">
+      <button data-cert="../pcb design.jpg">
         View certificate ↗
       </button>
 
@@ -646,7 +685,7 @@
         of Engineering and Technology, Hyderabad.
       </p>
 
-      <button data-cert="tenzorx.jpg">
+      <button data-cert="tenzorx.jpg.jpeg">
         View certificate ↗
       </button>
 
@@ -666,7 +705,7 @@
         • CampusCrew / Unstop
       </p>
 
-      <button data-cert="quizoff.jpg">
+      <button data-cert="quizoff.jpg.jpeg">
         View certificate ↗
       </button>
 
@@ -686,10 +725,19 @@
         • Jul–Aug 2026
       </p>
 
-      <button data-cert="campus-ambassador.jpg">
+      <button data-cert="campus-ambassador.jpg.jpeg">
         View certificate ↗
       </button>
 
+    </article>
+
+    <article class="credential reveal">
+      <span>NPTEL</span>
+      <h3>Cloud Computing</h3>
+      <p>National Programme on Technology Enhanced Learning.</p>
+      <button data-cert="cloud computing.jpg.jpeg">
+        View certificate ↗
+      </button>
     </article>
 
   </div>
@@ -702,7 +750,7 @@
 <section class="section stack">
 
   <div class="section-label reveal">
-    <span>05</span>
+    <span>06</span>
     TOOLKIT
   </div>
 
@@ -711,29 +759,49 @@
     <div>
       <small>PROGRAMMING</small>
       <h3>
-        C · Java · Python · JavaScript
+        C, Java, Python, JavaScript
       </h3>
     </div>
 
     <div>
       <small>CORE</small>
       <h3>
-        Embedded Systems · VLSI · Digital Electronics
+        Embedded Systems, VLSI, Digital Electronics, GSM, Networking, Optical Fiber Communication
       </h3>
     </div>
 
     <div>
-      <small>COMMUNICATION</small>
+      <small>EMBEDDED & HARDWARE</small>
       <h3>
-        GSM · Networking · Optical Fiber
+        NodeMCU, IoT, Embedded Hardware Integration
       </h3>
     </div>
 
     <div>
       <small>TOOLS</small>
       <h3>
-        VS Code · GitHub · NodeMCU
+        Visual Studio Code, GitHub
       </h3>
+    </div>
+
+    <div>
+      <small>LANGUAGES</small>
+      <h3>Telugu, English, Hindi</h3>
+    </div>
+
+    <div>
+      <small>INTERESTS</small>
+      <h3>Embedded Systems, VLSI, Artificial Intelligence, Technology, Fitness</h3>
+    </div>
+
+    <div>
+      <small>SOFT SKILLS</small>
+      <h3>Leadership, Communication, Teamwork, Problem Solving, Time Management, Adaptability</h3>
+    </div>
+
+    <div>
+      <small>ACHIEVEMENTS</small>
+      <h3>Andhra Project Summit Participant, Team Leader for the academic project, 6-month BSNL Industrial Training, APSCHE VLSI Internship at BR Concepts</h3>
     </div>
 
   </div>
@@ -748,7 +816,7 @@
   <div class="contact-glow"></div>
 
   <div class="section-label reveal">
-    <span>06</span>
+    <span>07</span>
     CONTACT
   </div>
 
@@ -777,7 +845,7 @@
     <div class="contact-meta">
 
       <span>
-        Narsapuram, Andhra Pradesh
+        Narsapuram, Andhra Pradesh - 534275
       </span>
 
       <span>
@@ -829,7 +897,7 @@
 
 <!-- CERTIFICATE MODAL -->
 
-<div class="modal" aria-hidden="true">
+<div class="modal" aria-hidden="true" hidden>
 
   <div class="modal-backdrop"></div>
 
