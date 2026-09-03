@@ -248,6 +248,37 @@ body { background: #101010; color: #f7f5f2; }
   .mail { font-size: 1rem; }
   .ticker > div { width: 100%; flex-wrap: wrap; justify-content: center; gap: 12px; animation: none; }
 }
+
+@media (max-width: 600px) {
+  .nav { height: 64px; gap: 10px; }
+  .brand { min-width: 0; font-size: .82rem; line-height: 1; }
+  .nav-cta { flex-shrink: 0; padding: 8px 10px; font-size: .62rem; }
+  .hero { min-height: auto; padding: 112px 16px 70px; }
+  .hero .hero-copy { transform: none; }
+  .hero h1 { font-size: clamp(3.1rem, 15vw, 5rem); line-height: .95; }
+  .hero-text { font-size: .9rem; line-height: 1.55; }
+  .hero-contact { gap: 7px 12px; font-size: .62rem; line-height: 1.35; }
+  .actions { width: 100%; margin-top: 25px; }
+  .social-row { flex-wrap: wrap; gap: 12px 18px; }
+  .about h2, .projects h2, .credentials h2 { font-size: clamp(2.9rem, 13vw, 4.4rem); }
+  .about-content, .projects-head, .credentials-head { gap: 28px; margin-top: 38px; }
+  .about-photo { width: min(100%, 300px); height: 350px; margin-top: 28px; }
+  .stats { gap: 18px 10px; margin-top: 32px; }
+  .experience { grid-template-columns: 28px 1fr; gap: 10px; padding: 22px 0; }
+  .exp-head h3 { font-size: 1.55rem; }
+  .detail-list { padding-left: 16px; font-size: .9rem; }
+  .project-feature { gap: 22px; margin-top: 38px; padding: 25px 0; }
+  .project-copy h3 { font-size: clamp(2.1rem, 10vw, 3.2rem); }
+  .project-copy > p:not(.project-type) { font-size: .9rem; line-height: 1.55; }
+  .project-card, .credential { padding: 20px; }
+  .project-card-image { width: calc(100% + 40px); height: 155px; margin: -20px -20px 20px; }
+  .project-card h3 { font-size: 1.65rem; }
+  .credential h3 { margin-top: 22px; font-size: 1.25rem; }
+  .intro-kicker, .intro-status { font-size: .56rem; letter-spacing: .14em; }
+  .intro-content h2 { font-size: clamp(4rem, 20vw, 7rem); }
+  .intro-line { width: 80px; }
+  .contact h2 { font-size: clamp(3.3rem, 15vw, 5rem); }
+}
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
 
 /* Typography hierarchy: Space Grotesk for display, Manrope for interface text. */
